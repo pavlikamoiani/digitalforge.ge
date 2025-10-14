@@ -2,7 +2,7 @@ import React from "react";
 import styles from "../assets/css/Header.module.css";
 import { useTranslation } from "react-i18next";
 
-export default function Header({ onAboutClick }) {
+export default function Header({ onScrollToSection }) {
 	const { t, i18n } = useTranslation();
 
 	const changeLang = (lng) => {
@@ -18,7 +18,7 @@ export default function Header({ onAboutClick }) {
 				<button
 					type="button"
 					className={styles.navLink}
-					onClick={onAboutClick}
+					onClick={() => onScrollToSection('about-section')}
 					style={{ background: "none", border: "none" }}
 				>
 					{t("About Us")}
@@ -26,6 +26,7 @@ export default function Header({ onAboutClick }) {
 				<button
 					type="button"
 					className={styles.navLink}
+					onClick={() => onScrollToSection('services-section')}
 					style={{ background: "none", border: "none" }}
 				>
 					{t("Services")}
@@ -33,6 +34,7 @@ export default function Header({ onAboutClick }) {
 				<button
 					type="button"
 					className={styles.navLink}
+					onClick={() => onScrollToSection('portfolio-section')}
 					style={{ background: "none", border: "none" }}
 				>
 					{t("Portfolio")}
