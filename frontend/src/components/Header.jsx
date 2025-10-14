@@ -1,26 +1,50 @@
 import React from "react";
 import styles from "../assets/css/Header.module.css";
-import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 
-export default function Header() {
-	const { t } = useTranslation();
+export default function Header({ onAboutClick }) {
+	const { t, i18n } = useTranslation();
+
+	const changeLang = (lng) => {
+		i18n.changeLanguage(lng);
+	};
 
 	return (
 		<header className={styles.header}>
-			<div className={styles.logo} onClick={() => window.location.reload()}
-			>
+			<div className={styles.logo} onClick={() => window.location.reload()}>
 				DigitalForge
 			</div>
 			<nav className={styles.nav}>
-				<Link to="/about" className={styles.navLink}>{t("About Us")}</Link>
-				<Link to="/services" className={styles.navLink}>{t("Services")}</Link>
-				<Link to="/portfolio" className={styles.navLink}>{t("Portfolio")}</Link>
 				<button
-					className={styles.contactBtn}
+					type="button"
+					className={styles.navLink}
+					onClick={onAboutClick}
+					style={{ background: "none", border: "none" }}
 				>
+					{t("About Us")}
+				</button>
+				<button
+					type="button"
+					className={styles.navLink}
+					style={{ background: "none", border: "none" }}
+				>
+					{t("Services")}
+				</button>
+				<button
+					type="button"
+					className={styles.navLink}
+					style={{ background: "none", border: "none" }}
+				>
+					{t("Portfolio")}
+				</button>
+				<button className={styles.contactBtn}>
 					{t("Contact")}
 				</button>
+				{/* <div className={styles.langSwitcher}>
+					<button onClick={() => changeLang('en')} className={styles.langBtn}>EN</button>
+					<button onClick={() => changeLang('ru')} className={styles.langBtn}>RU</button>
+					<button onClick={() => changeLang('ka')} className={styles.langBtn}>KA</button>
+				</div> */}
 			</nav>
 		</header>
 	);

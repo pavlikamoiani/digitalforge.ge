@@ -6,6 +6,7 @@
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .heroTitle {
@@ -53,6 +54,12 @@
 	font-size: 1rem;
 	cursor: pointer;
 	width: 220px;
+	transition: background 0.4s, color 0.4s;
+}
+
+.projectsBtn:hover {
+	background: #fff;
+	color: #000;
 }
 
 .heroCircleWrapper {
