@@ -1,10 +1,19 @@
 import React from 'react'
+import { useEffect } from 'react';
 import styles from '../assets/css/Service.module.css'
 import { useTranslation } from 'react-i18next';
 
 const Services = () => {
 
 	const { t } = useTranslation();
+
+	useEffect(() => {
+		if (window.$) {
+			$('.js-tilt').tilt({
+				axis: 'y'
+			});
+		}
+	}, []);
 	return (
 		<>
 			<div className={styles.servicesHeader}>
@@ -14,7 +23,7 @@ const Services = () => {
 				</p>
 			</div>
 			<div className={styles.servicesContainer}>
-				<div className={styles.serviceCard}>
+				<div className={`js-tilt ${styles.serviceCard}`}>
 					<div className={styles.serviceNumber}>01</div>
 					<h2 className={styles.serviceTitle}>{t('Web Development')}</h2>
 					<p className={styles.serviceDesc}>
@@ -27,7 +36,7 @@ const Services = () => {
 						<li>{t('High Performance')}</li>
 					</ul>
 				</div>
-				<div className={styles.serviceCard}>
+				<div className={`js-tilt ${styles.serviceCard}`}>
 					<div className={styles.serviceNumber}>02</div>
 					<h2 className={styles.serviceTitle}>{t('Design')}</h2>
 					<p className={styles.serviceDesc}>
@@ -40,7 +49,7 @@ const Services = () => {
 						<li>{t('Design Systems')}</li>
 					</ul>
 				</div>
-				<div className={styles.serviceCard}>
+				<div className={`js-tilt ${styles.serviceCard}`}>
 					<div className={styles.serviceNumber}>03</div>
 					<h2 className={styles.serviceTitle}>{t('Design')}</h2>
 					<p className={styles.serviceDesc}>
@@ -53,7 +62,7 @@ const Services = () => {
 						<li>{t('Design Systems')}</li>
 					</ul>
 				</div>
-				<div className={styles.serviceCard}>
+				<div className={`js-tilt ${styles.serviceCard}`}>
 					<div className={styles.serviceNumber}>04</div>
 					<h2 className={styles.serviceTitle}>{t('Design')}</h2>
 					<p className={styles.serviceDesc}>

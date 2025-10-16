@@ -1,11 +1,11 @@
 .servicesContainer {
 	display: flex;
-	justify-content: space-between;
-	align-items: center;
+	justify-content: center;
 	align-items: stretch;
 	padding: 5% 10%;
 	background: #000;
 	flex-wrap: wrap;
+	gap: 30px;
 }
 
 .serviceCard {
@@ -19,8 +19,6 @@
 	display: flex;
 	flex-direction: column;
 	flex: 1 1 540px;
-	transition: border-color 0.3s ease;
-	margin-top: 20px;
 }
 
 .serviceCard:hover {
@@ -75,7 +73,7 @@
 
 .servicesHeader {
 	width: 100%;
-	padding: 10% 10% 0 10%;
+	padding: 10% 10% 0;
 }
 
 .servicesTitle {
