@@ -41,7 +41,7 @@ export default function Portfolio() {
     ]
 
     return (
-        <section id="portfolio" style={{ padding: '10% 10% 0' }}>
+        <section id="portfolio" style={{ padding: '10%', borderBottom: '1px solid rgba(255, 255, 255, 0.1)' }}>
             <div className="w-full flex flex-col">
                 <div >
                     <h2 className="text-4xl md:text-6xl font-bold mb-6 tracking-tight text-balance text-white">Наши проекты</h2>

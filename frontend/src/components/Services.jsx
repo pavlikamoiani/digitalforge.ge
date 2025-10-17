@@ -9,6 +9,7 @@ const Services = () => {
 
 	useEffect(() => {
 		if (window.$) {
+			// eslint-disable-next-line
 			$('.js-tilt').tilt({
 				axis: 'y'
 			});

@@ -41,7 +41,7 @@ export default function Header({ onScrollToSection }) {
 				>
 					{t("Portfolio")}
 				</button>
-				<button className={styles.contactBtn}>
+				<button type="button" onClick={() => onScrollToSection('contact-section')} className={styles.contactBtn}>
 					{t("Contact")}
 				</button>
 				<button className="hidden md:flex items-center justify-center w-10 h-10 rounded-full border border-border hover:bg-muted hover:text-primary transition-colors cursonr-pointer">
