@@ -3,6 +3,7 @@ import Header from './components/Header'
 import Hero from './components/Hero'
 import About from './components/About'
 import Services from './components/Services'
+import Portfolio from './components/Portfolio'
 
 function App() {
   const handleScrollToSection = (sectionId) => {
@@ -21,6 +22,9 @@ function App() {
       </div>
       <div id='services-section'>
         <Services />
+      </div>
+      <div id='portfolio-section'>
+        <Portfolio />
       </div>
     </div>
   )
