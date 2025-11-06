@@ -38,6 +38,34 @@ const resources = {
 			'Branding': 'Branding',
 			'Prototyping': 'Prototyping',
 			'Design Systems': 'Design Systems',
+
+			// Portfolio section
+			'Our Projects': 'Our Projects',
+			'Selected works we are proud of': 'Selected works we are proud of',
+
+			// Contact section
+			'Contact Us': 'Contact Us',
+			'Ready to start your project? Contact us and we will discuss how we can help your business grow.': 'Ready to start your project? Contact us and we will discuss how we can help your business grow.',
+			'Phone': 'Phone',
+			'Social Media': 'Social Media',
+			'Thank You!': 'Thank You!',
+			'We have received your message and will get back to you soon.': 'We have received your message and will get back to you soon.',
+			'Message': 'Message',
+			'Your Name': 'Your Name',
+			'Your Message': 'Your Message',
+			'Send Message': 'Send Message',
+
+			// Footer section
+			'Privacy Policy': 'Privacy Policy',
+			'Terms of Service': 'Terms of Service',
+			'All rights reserved.': 'All rights reserved.',
+			'We create modern digital solutions for your business. Web development, design, and marketing.': 'We create modern digital solutions for your business. Web development, design, and marketing.',
+			'Navigation': 'Navigation',
+			'Contacts': 'Contacts',
+			'About Us': 'About Us',
+			'Services': 'Services',
+			'Portfolio': 'Portfolio',
+			'Contact': 'Contact',
 		}
 	},
 	ru: {
@@ -76,6 +104,36 @@ const resources = {
 			'Branding': 'Брендинг',
 			'Prototyping': 'Прототипирование',
 			'Design Systems': 'Дизайн-системы',
+
+			// Portfolio section
+			'Our Projects': 'Наши проекты',
+			'Selected works we are proud of': 'Избранные работы, которыми мы гордимся',
+
+			// Contact section
+			'Contact Us': 'Связаться с нами',
+			'Ready to start your project? Contact us and we will discuss how we can help your business grow.': 'Готовы начать свой проект? Свяжитесь с нами, и мы обсудим, как мы можем помочь вашему бизнесу расти.',
+			'Phone': 'Телефон',
+			'Social Media': 'Социальные сети',
+			'Thank You!': 'Спасибо!',
+			'We have received your message and will get back to you soon.': 'Мы получили ваше сообщение и скоро свяжемся с вами.',
+			'Message': 'Сообщение',
+			'Your Name': 'Ваше имя',
+			'Your Message': 'Ваше сообщение',
+			'Send Message': 'Отправить сообщение',
+
+
+			// Footer section
+			'Privacy Policy': 'Политика конфиденциальности',
+			'Terms of Service': 'Условия использования',
+			'All rights reserved.': 'Все права защищены.',
+			'We create modern digital solutions for your business. Web development, design, and marketing.': 'Мы создаем современные цифровые решения для вашего бизнеса. Веб-разработка, дизайн и маркетинг.',
+			'Navigation': 'Навигация',
+			'Contacts': 'Контакты',
+			'About Us': 'О нас',
+			'Services': 'Услуги',
+			'Portfolio': 'Портфолио',
+			'Contact': 'Контакты',
+
 		}
 	},
 	ka: {
@@ -113,6 +171,34 @@ const resources = {
 			'Branding': 'ბრენდინგი',
 			'Prototyping': 'პროტოტიპირება',
 			'Design Systems': 'დიზაინ სისტემები',
+
+			// Portfolio section
+			'Our Projects': 'ჩვენი პროექტები',
+			'Selected works we are proud of': 'არჩეული ნამუშევრები, რომლითაც ვამაყობთ',
+
+			// Contact section
+			'Contact Us': 'დაგვიკავშირდით',
+			'Ready to start your project? Contact us and we will discuss how we can help your business grow.': 'მზად ხართ თქვენი პროექტის დასაწყებად? დაგვიკავშირდით და ჩვენ განვიხილავთ, როგორ შეგვიძლია თქვენი ბიზნესის ზრდაში დახმარება.',
+			'Phone': 'ტელეფონი',
+			'Social Media': 'სოციალური მედია',
+			'Thank You!': 'გმადლობთ!',
+			'We have received your message and will get back to you soon.': 'ჩვენ მივიღეთ თქვენი შეტყობინება და მალე დაგიკავშირდებით.',
+			'Message': 'შეტყობინება',
+			'Your Name': 'თქვენი სახელი',
+			'Your Message': 'თქვენი შეტყობინება',
+			'Send Message': 'შეტყობინების გაგზავნა',
+
+			// Footer section
+			'Privacy Policy': 'კონფიდენციალურობის პოლიტიკა',
+			'Terms of Service': 'მომსახურების პირობები',
+			'All rights reserved.': 'ყველა უფლება დაცულია.',
+			'We create modern digital solutions for your business. Web development, design, and marketing.': 'ჩვენ ვქმნით თანამედროვე ციფრულ გადაწყვეტილებებს თქვენი ბიზნესისთვის. ვებ განვითარება, დიზაინი და მარკეტინგი.',
+			'Navigation': 'ნავიგაცია',
+			'Contacts': 'კონტაქტები',
+			'About Us': 'ჩვენს შესახებ',
+			'Services': 'სერვისები',
+			'Portfolio': 'პორტფოლიო',
+			'Contact': 'კონტაქტი',
 		}
 	}
 };

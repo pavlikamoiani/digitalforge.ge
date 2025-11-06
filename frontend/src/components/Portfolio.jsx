@@ -1,6 +1,9 @@
 import PortfolioItem from "./PortfolioItem"
+import { useTranslation } from 'react-i18next';
 
 export default function Portfolio() {
+    const { t } = useTranslation();
+
     const projects = [
         {
             title: "E-commerce платформа",
@@ -41,15 +44,15 @@ export default function Portfolio() {
     ]
 
     return (
-        <section id="portfolio" style={{ padding: '10%', borderBottom: '1px solid rgba(255, 255, 255, 0.1)' }}>
+        <section id="portfolio" className="px-6 py-12 sm:p-[5%]" style={{ borderBottom: '1px solid rgba(255, 255, 255, 0.1)' }}>
             <div className="w-full flex flex-col">
                 <div >
-                    <h2 className="text-4xl md:text-6xl font-bold mb-6 tracking-tight text-balance text-white">Наши проекты</h2>
+                    <h2 className="text-5xl md:text-5xl font-bold mb-6 tracking-tight text-balance text-white">{t('Our Projects')}</h2>
                     <p className="text-lg text-muted-foreground max-w-2xl text-[#bdbdbd]">
-                        Избранные работы, которыми мы гордимся
+                        {t('Selected works we are proud of')}
                     </p>
                 </div>
-                <div className="w-full flex justify-center items-center" style={{ padding: '5% 10%' }}>
+                <div className="w-full flex justify-center items-center mt-5">
                     <div className="grid md:grid-cols-2 gap-6 md:gap-8 w-full ">
                         {projects.map((project, index) => (
                             <PortfolioItem key={index} {...project} />

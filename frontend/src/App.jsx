@@ -1,10 +1,12 @@
 import './App.css'
+import { useNavigate } from 'react-router-dom';
 import Header from './components/Header'
 import Hero from './components/Hero'
 import About from './components/About'
 import Services from './components/Services'
 import Portfolio from './components/Portfolio'
 import Contact from './components/Contact'
+import Footer from './components/Footer'
 
 function App() {
   const handleScrollToSection = (sectionId) => {
@@ -12,6 +14,12 @@ function App() {
     if (section) {
       section.scrollIntoView({ behavior: 'smooth' });
     }
+  };
+
+  const navigate = useNavigate();
+
+  const handleLangChange = (lng) => {
+    navigate(`/${lng}`);
   };
 
   return (
@@ -29,6 +37,9 @@ function App() {
       </div>
       <div id='contact-section'>
         <Contact />
+      </div>
+      <div id="footer-section">
+        <Footer onLanguageChange={handleLangChange} />
       </div>
     </div>
   )

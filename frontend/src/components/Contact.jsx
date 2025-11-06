@@ -1,6 +1,10 @@
 import { useState } from "react"
+import { useTranslation } from 'react-i18next';
+
 
 export default function Contact() {
+    const { t } = useTranslation();
+
     const [formData, setFormData] = useState({
         name: "",
         email: "",
@@ -26,25 +30,25 @@ export default function Contact() {
     }
 
     return (
-        <section id="contact" className="flex align-center justify-center bg-black py-20 md:py-32" style={{ padding: '10%', borderBottom: '1px solid rgba(255, 255, 255, 0.1)' }}>
-            <div className="max-w-6xl mx-auto flex flex-col md:flex-row gap-16 md:gap-20 px-4">
+        <section id="contact" className="flex w-full items-center justify-between bg-black py-50 px-[10%] " style={{ borderBottom: '1px solid rgba(255, 255, 255, 0.1)' }}>
+            <div className="flex items-center justify-between flex-col md:flex-row gap-16 md:gap-20 px-4 w-full">
                 <div className="flex-1 min-w-[320px]">
-                    <h2 className="text-4xl md:text-6xl font-bold mb-8 text-white leading-tight">
-                        Свяжитесь с нами
+                    <h2 className="text-4xl md:text-5xl font-bold mb-8 text-white leading-tight">
+                        {t('Contact Us')}
                     </h2>
-                    <p className="text-[#bdbdbd] text-lg md:text-xl mb-10 max-w-xl">
-                        Готовы начать проект? Напишите нам, и мы обсудим, как можем помочь вашему бизнесу расти.
+                    <p className="text-[#bdbdbd] text-lg mb-10 max-w-xl">
+                        {t('Ready to start your project? Contact us and we will discuss how we can help your business grow.')}
                     </p>
                     <div className="mb-7">
                         <div className="font-bold text-white mb-1">Email</div>
-                        <div className="text-white">hello@digitalforge.ru</div>
+                        <div className="text-white">digitalforge.ge@gmail.com</div>
                     </div>
                     <div className="mb-7">
-                        <div className="font-bold text-white mb-1">Телефон</div>
-                        <div className="text-white">+7 (900) 123-45-67</div>
+                        <div className="font-bold text-white mb-1">{t('Phone')}</div>
+                        <a href="tel:+995571132156" className="text-white">+995 (571) 13-21-56</a>
                     </div>
                     <div>
-                        <div className="font-bold text-white mb-1">Социальные сети</div>
+                        <div className="font-bold text-white mb-1">{t('Social Media')}</div>
                         <div className="flex gap-6 text-white">
                             <a href="#" className="hover:underline">Telegram</a>
                             <a href="#" className="hover:underline">Instagram</a>
@@ -56,16 +60,16 @@ export default function Contact() {
                     {isSubmitted ? (
                         <div className="bg-[#111] border border-[#333] rounded-xl p-10 text-center text-white">
                             <div className="text-5xl mb-4">✓</div>
-                            <h3 className="text-2xl font-bold mb-2">Спасибо!</h3>
+                            <h3 className="text-2xl font-bold mb-2">{t('Thank You!')}</h3>
                             <p className="text-[#bdbdbd]">
-                                Мы получили ваше сообщение и свяжемся с вами в ближайшее время.
+                                {t('We have received your message and will get back to you soon.')}
                             </p>
                         </div>
                     ) : (
                         <form onSubmit={handleSubmit} className="flex flex-col gap-6">
                             <div>
                                 <label htmlFor="name" className="block text-white font-medium mb-2">
-                                    Имя
+                                    {t('Name')}
                                 </label>
                                 <input
                                     id="name"
@@ -74,7 +78,7 @@ export default function Contact() {
                                     required
                                     value={formData.name}
                                     onChange={handleChange}
-                                    placeholder="Ваше имя"
+                                    placeholder={t('Your Name')}
                                     className="w-full px-4 py-3 rounded-lg border border-[#222] bg-[#111] text-white text-base outline-none focus:border-white transition"
                                 />
                             </div>
@@ -95,7 +99,7 @@ export default function Contact() {
                             </div>
                             <div>
                                 <label htmlFor="message" className="block text-white font-medium mb-2">
-                                    Сообщение
+                                    {t('Message')}
                                 </label>
                                 <textarea
                                     id="message"
@@ -104,7 +108,7 @@ export default function Contact() {
                                     value={formData.message}
                                     onChange={handleChange}
                                     rows={4}
-                                    placeholder="Расскажите о вашем проекте..."
+                                    placeholder={t('Your Message')}
                                     className="w-full px-4 py-3 rounded-lg border border-[#222] bg-[#111] text-white text-base outline-none resize-none focus:border-white transition"
                                 />
                             </div>
@@ -112,12 +116,12 @@ export default function Contact() {
                                 type="submit"
                                 className="w-full bg-white text-black font-medium text-lg rounded-xl py-4 mt-2 hover:bg-gray-200 transition"
                             >
-                                Отправить сообщение
+                                {t('Send Message')}
                             </button>
                         </form>
                     )}
                 </div>
             </div>
-        </section>
+        </section >
     )
 }
