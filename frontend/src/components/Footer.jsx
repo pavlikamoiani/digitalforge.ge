@@ -37,22 +37,22 @@ export default function Footer({ onLanguageChange }) {
 							<h3 className="font-bold mb-4 text-white">{t('Navigation')}</h3>
 							<ul className="space-y-2 text-sm">
 								<li>
-									<a href="#about" className="text-white hover:underline transition-colors">
+									<a href="#about-section" className="text-white hover:underline transition-colors">
 										{t('About Us')}
 									</a>
 								</li>
 								<li>
-									<a href="#services" className="text-white hover:underline transition-colors">
+									<a href="#services-section" className="text-white hover:underline transition-colors">
 										{t('Services')}
 									</a>
 								</li>
 								<li>
-									<a href="#portfolio" className="text-white hover:underline transition-colors">
+									<a href="#portfolio-section" className="text-white hover:underline transition-colors">
 										{t('Portfolio')}
 									</a>
 								</li>
 								<li>
-									<a href="#contact" className="text-white hover:underline transition-colors">
+									<a href="#contact-section" className="text-white hover:underline transition-colors">
 										{t('Contact')}
 									</a>
 								</li>

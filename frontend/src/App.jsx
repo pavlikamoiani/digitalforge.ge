@@ -8,6 +8,8 @@ import Portfolio from './components/Portfolio'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
 
+import { motion } from 'framer-motion';
+
 function App() {
   const handleScrollToSection = (sectionId) => {
     const section = document.getElementById(sectionId);
