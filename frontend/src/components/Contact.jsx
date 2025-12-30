@@ -78,7 +78,7 @@ export default function Contact() {
                                     />
                                 </div>
                                 <div className="space-y-2">
-                                    <label className="text-sm text-gray-500 ml-2">Email</label>
+                                    <label className="text-sm text-gray-500 ml-2">{t('Email')}</label>
                                     <input
                                         type="email" required
                                         className="w-full bg-white/5 border border-white/10 rounded-2xl px-6 py-4 text-white focus:outline-none focus:border-blue-500/50 focus:bg-white/[0.08] transition-all"

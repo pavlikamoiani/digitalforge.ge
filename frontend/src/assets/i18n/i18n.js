@@ -4,7 +4,7 @@ import { initReactI18next } from "react-i18next";
 const resources = {
 	en: {
 		translation: {
-			"About Us": "About Us",
+			"About": "About Us",
 			"Services": "Services",
 			"Portfolio": "Portfolio",
 			"Contact": "Contact",
@@ -14,6 +14,10 @@ const resources = {
 			'DigitalForge is a full-cycle web agency. Development, design, and marketing for your brand growth.': 'DigitalForge is a full-cycle web agency. Development, design, and marketing for your brand growth.',
 			'Contact Us': 'Contact Us',
 			'Our Projects': 'Our Projects',
+			"Available for new projects": "Available for new projects",
+			"We build": "We build",
+			"digital future": "digital future",
+			"Start a Project": "Start a Project",
 
 			// about section
 			'DigitalForge is a team of professionals who create digital solutions for businesses of all sizes. We combine creativity, technology, and strategy to achieve your goals.': 'DigitalForge is a team of professionals who create digital solutions for businesses of all sizes. We combine creativity, technology, and strategy to achieve your goals.',
@@ -22,6 +26,9 @@ const resources = {
 			'Years of Experience': 'Years of Experience',
 			'Satisfied Clients': 'Satisfied Clients',
 			'Quality Assurance': 'Quality Assurance',
+			"Who we are": "Who we are",
+			'DigitalForge': 'DigitalForge',
+			'Architects of Future': 'Architects of Future',
 
 			// services section
 			'Our Services': 'Our Services',
@@ -38,13 +45,18 @@ const resources = {
 			'Branding': 'Branding',
 			'Prototyping': 'Prototyping',
 			'Design Systems': 'Design Systems',
+			"A full range of services to create and develop your digital presence with cutting-edge solutions.": "A full range of services to create and develop your digital presence with cutting-edge solutions.",
+			"We build fullstack applications using React Native, covering both frontend and backend for scalable solutions.": "We build fullstack applications using React Native, covering both frontend and backend for scalable solutions.",
+			"Strategic digital marketing to grow your business presence and reach the right audience.": "Strategic digital marketing to grow your business presence and reach the right audience.",
 
 			// Portfolio section
-			'Our Projects': 'Our Projects',
 			'Selected works we are proud of': 'Selected works we are proud of',
+			"Case Studies": "Case Studies",
+			"Selected": "Selected",
+			"Works": "Works",
+			"Crafting digital experiences that combine functionality with visual excellence.": "Crafting digital experiences that combine functionality with visual excellence.",
 
 			// Contact section
-			'Contact Us': 'Contact Us',
 			'Ready to start your project? Contact us and we will discuss how we can help your business grow.': 'Ready to start your project? Contact us and we will discuss how we can help your business grow.',
 			'Phone': 'Phone',
 			'Social Media': 'Social Media',
@@ -54,6 +66,13 @@ const resources = {
 			'Your Name': 'Your Name',
 			'Your Message': 'Your Message',
 			'Send Message': 'Send Message',
+			"Let’s talk": "Let’s talk",
+			"Have an idea? We have the tools to build it. Reach out and let’s create something legendary.": "Have an idea? We have the tools to build it. Reach out and let’s create something legendary.",
+			"Email Us": "Email Us",
+			"Call Us": "Call Us",
+			"Name": "Name",
+			"Email": "Email",
+			"Send Inquiry": "Send Inquiry",
 
 			// Footer section
 			'Privacy Policy': 'Privacy Policy',
@@ -63,14 +82,14 @@ const resources = {
 			'Navigation': 'Navigation',
 			'Contacts': 'Contacts',
 			'About Us': 'About Us',
-			'Services': 'Services',
-			'Portfolio': 'Portfolio',
-			'Contact': 'Contact',
+			"Crafting high-end digital solutions that push the boundaries of design and technology.": "Crafting high-end digital solutions that push the boundaries of design and technology.",
+			"Company": "Company",
+			"Language": "Language"
 		}
 	},
 	ru: {
 		translation: {
-			"About Us": "О нас",
+			"About": "О нас",
 			"Services": "Услуги",
 			"Portfolio": "Портфолио",
 			"Contact": "Контакты",
@@ -80,6 +99,10 @@ const resources = {
 			'DigitalForge is a full-cycle web agency. Development, design, and marketing for your brand growth.': 'DigitalForge - это веб-агентство полного цикла. Разработка, дизайн и маркетинг для роста вашего бренда.',
 			'Contact Us': 'Связаться с нами',
 			'Our Projects': 'Наши проекты',
+			"Available for new projects": "Доступны для новых проектов",
+			"We build": "Мы строим",
+			"digital future": "цифровое будущее",
+			"Start a Project": "Начать проект",
 
 			// about section
 			'DigitalForge is a team of professionals who create digital solutions for businesses of all sizes. We combine creativity, technology, and strategy to achieve your goals.': 'DigitalForge - это команда профессионалов, создающих цифровые решения для бизнеса любого масштаба. Мы объединяем креативность, технологии и стратегию для достижения ваших целей.',
@@ -88,6 +111,9 @@ const resources = {
 			'Years of Experience': 'Лет опыта',
 			'Satisfied Clients': 'Довольных клиентов',
 			'Quality Assurance': 'Гарантия качества',
+			"Who we are": "Кто мы",
+			'DigitalForge': 'DigitalForge',
+			'Architects of Future': 'Архитекторы будущего',
 
 			// services section
 			'Our Services': 'Наши услуги',
@@ -104,13 +130,18 @@ const resources = {
 			'Branding': 'Брендинг',
 			'Prototyping': 'Прототипирование',
 			'Design Systems': 'Дизайн-системы',
+			"A full range of services to create and develop your digital presence with cutting-edge solutions.": "Полный спектр услуг по созданию и развитию вашего цифрового присутствия с использованием передовых решений.",
+			"We build fullstack applications using React Native, covering both frontend and backend for scalable solutions.": "Мы создаем полнофункциональные приложения с использованием React Native, охватывая как фронтенд, так и бэкенд для масштабируемых решений.",
+			"Strategic digital marketing to grow your business presence and reach the right audience.": "Стратегический цифровой маркетинг для увеличения присутствия вашего бизнеса и достижения нужной аудитории.",
 
 			// Portfolio section
-			'Our Projects': 'Наши проекты',
 			'Selected works we are proud of': 'Избранные работы, которыми мы гордимся',
+			"Case Studies": "Кейсы",
+			"Selected": "Избранные",
+			"Works": "Работы",
+			"Crafting digital experiences that combine functionality with visual excellence.": "Создание цифровых впечатлений, которые сочетают функциональность с визуальным совершенством.",
 
 			// Contact section
-			'Contact Us': 'Связаться с нами',
 			'Ready to start your project? Contact us and we will discuss how we can help your business grow.': 'Готовы начать свой проект? Свяжитесь с нами, и мы обсудим, как мы можем помочь вашему бизнесу расти.',
 			'Phone': 'Телефон',
 			'Social Media': 'Социальные сети',
@@ -120,7 +151,13 @@ const resources = {
 			'Your Name': 'Ваше имя',
 			'Your Message': 'Ваше сообщение',
 			'Send Message': 'Отправить сообщение',
-
+			"Let’s talk": "Давайте поговорим",
+			"Have an idea? We have the tools to build it. Reach out and let’s create something legendary.": "Есть идея? У нас есть инструменты, чтобы воплотить ее в жизнь. Свяжитесь с нами, и давайте создадим что-то легендарное.",
+			"Email Us": "Напишите нам",
+			"Call Us": "Позвоните нам",
+			"Name": "Имя",
+			"Email": "Электронная почта",
+			"Send Inquiry": "Отправить запрос",
 
 			// Footer section
 			'Privacy Policy': 'Политика конфиденциальности',
@@ -130,10 +167,9 @@ const resources = {
 			'Navigation': 'Навигация',
 			'Contacts': 'Контакты',
 			'About Us': 'О нас',
-			'Services': 'Услуги',
-			'Portfolio': 'Портфолио',
-			'Contact': 'Контакты',
-
+			"Crafting high-end digital solutions that push the boundaries of design and technology.": "Создание высококлассных цифровых решений, которые раздвигают границы дизайна и технологий.",
+			"Company": "Компания",
+			"Language": "Язык"
 		}
 	},
 	ka: {
@@ -143,10 +179,15 @@ const resources = {
 			"Portfolio": "პორტფოლიო",
 			"Contact": "კონტაქტი",
 
+			// hero section
 			'We create modern websites for your business.': 'ჩვენ ვქმნით თანამედროვე ვებსაიტებს თქვენი ბიზნესისთვის.',
 			'DigitalForge is a full-cycle web agency. Development, design, and marketing for your brand growth.': 'DigitalForge არის სრული ციკლის ვებ სააგენტო. განვითარება, დიზაინი და მარკეტინგი თქვენი ბრენდის ზრდისთვის.',
 			'Contact Us': 'დაგვიკავშირდით',
 			'Our Projects': 'ჩვენი პროექტები',
+			"Available for new projects": "მზად ვართ ახალი პროექტებისთვის",
+			"We build": "ჩვენ ვაშენებთ",
+			"digital future": "ციფრულ მომავალს",
+			"Start a Project": "დაიწყეთ პროექტი",
 
 			// about section
 			'DigitalForge is a team of professionals who create digital solutions for businesses of all sizes. We combine creativity, technology, and strategy to achieve your goals.': 'DigitalForge არის პროფესიონალების გუნდი, რომელიც ქმნის ციფრულ გადაწყვეტილებებს ნებისმიერი ზომის ბიზნესისთვის. ჩვენ ვაერთიანებთ კრეატიულობას, ტექნოლოგიას და სტრატეგიას თქვენი მიზნების მისაღწევად.',
@@ -155,6 +196,9 @@ const resources = {
 			'Years of Experience': 'გამოცდილების წლები',
 			'Satisfied Clients': 'დაკმაყოფილებული კლიენტები',
 			'Quality Assurance': 'ხარისხის უზრუნველყოფა',
+			"Who we are": "ვინ ვართ ჩვენ",
+			'DigitalForge': 'DigitalForge',
+			'Architects of Future': 'მომავლის არქიტექტორები',
 
 			// services section
 			'Our Services': 'ჩვენი სერვისები',
@@ -171,13 +215,18 @@ const resources = {
 			'Branding': 'ბრენდინგი',
 			'Prototyping': 'პროტოტიპირება',
 			'Design Systems': 'დიზაინ სისტემები',
+			"A full range of services to create and develop your digital presence with cutting-edge solutions.": "სრული სპექტრი სერვისების თქვენი ციფრული ყოფნის შესაქმნელად და განვითარებისთვის უახლესი გადაწყვეტილებებით.",
+			"We build fullstack applications using React Native, covering both frontend and backend for scalable solutions.": "ჩვენ ვაშენებთ ფულსტეკ აპლიკაციებს React Native-ის გამოყენებით, რომელიც მოიცავს როგორც ფრონტენდს, ასევე ბექენდს მასშტაბირებადი გადაწყვეტილებებისთვის.",
+			"Strategic digital marketing to grow your business presence and reach the right audience.": "სტრატეგიული ციფრული მარკეტინგი თქვენი ბიზნესის ყოფნის გასაზრდელად და სწორი აუდიტორიის მისაღწევად.",
 
 			// Portfolio section
-			'Our Projects': 'ჩვენი პროექტები',
 			'Selected works we are proud of': 'არჩეული ნამუშევრები, რომლითაც ვამაყობთ',
+			"Case Studies": "საქმეების შესწავლა",
+			"Selected": "არჩეული",
+			"Works": "ნამუშევრები",
+			"Crafting digital experiences that combine functionality with visual excellence.": "ციფრული გამოცდილებების შექმნა, რომელიც აერთიანებს ფუნქციონალობას ვიზუალური სრულყოფილებით.",
 
 			// Contact section
-			'Contact Us': 'დაგვიკავშირდით',
 			'Ready to start your project? Contact us and we will discuss how we can help your business grow.': 'მზად ხართ თქვენი პროექტის დასაწყებად? დაგვიკავშირდით და ჩვენ განვიხილავთ, როგორ შეგვიძლია თქვენი ბიზნესის ზრდაში დახმარება.',
 			'Phone': 'ტელეფონი',
 			'Social Media': 'სოციალური მედია',
@@ -187,6 +236,13 @@ const resources = {
 			'Your Name': 'თქვენი სახელი',
 			'Your Message': 'თქვენი შეტყობინება',
 			'Send Message': 'შეტყობინების გაგზავნა',
+			"Let’s talk": "მოვილაპარაკოთ",
+			"Have an idea? We have the tools to build it. Reach out and let’s create something legendary.": "გაქვთ იდეა? ჩვენ გვაქვს ინსტრუმენტები მისი განხორციელებისთვის. დაგვიკავშირდით და შევქმნათ რაღაც ლეგენდარული.",
+			"Email Us": "წერილი მოგვწერეთ",
+			"Call Us": "დაგვირეკეთ",
+			"Name": "სახელი",
+			"Email": "ელ.ფოსტა",
+			"Send Inquiry": "გამოგზავნეთ მოთხოვნა",
 
 			// Footer section
 			'Privacy Policy': 'კონფიდენციალურობის პოლიტიკა',
@@ -195,10 +251,10 @@ const resources = {
 			'We create modern digital solutions for your business. Web development, design, and marketing.': 'ჩვენ ვქმნით თანამედროვე ციფრულ გადაწყვეტილებებს თქვენი ბიზნესისთვის. ვებ განვითარება, დიზაინი და მარკეტინგი.',
 			'Navigation': 'ნავიგაცია',
 			'Contacts': 'კონტაქტები',
-			'About Us': 'ჩვენს შესახებ',
-			'Services': 'სერვისები',
-			'Portfolio': 'პორტფოლიო',
-			'Contact': 'კონტაქტი',
+			'About': 'ჩვენს შესახებ',
+			"Crafting high-end digital solutions that push the boundaries of design and technology.": "მაღალი დონის ციფრული გადაწყვეტილებების შექმნა, რომელიც აფართოებს დიზაინისა და ტექნოლოგიის საზღვრებს.",
+			"Company": "კომპანია",
+			"Language": "ენა"
 		}
 	}
 };
