@@ -1,148 +1,118 @@
-import React from 'react'
-import { useEffect } from 'react';
+import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
 
 const cardVariants = {
-	hidden: { opacity: 0, y: 60, scale: 0.95 },
+	hidden: { opacity: 0, y: 40 },
 	visible: (i) => ({
 		opacity: 1,
 		y: 0,
-		scale: 1,
 		transition: {
-			delay: i * 0.18,
-			duration: 0.7,
-			type: "spring",
-			stiffness: 60,
-			damping: 12,
+			delay: i * 0.15,
+			duration: 0.8,
+			ease: [0.215, 0.61, 0.355, 1],
 		}
-	}),
-	hover: {
-		scale: 1.04,
-		boxShadow: "0 8px 32px 0 rgba(0,0,0,0.25)",
-		rotate: 2,
-		transition: { duration: 0.25 }
-	}
-};
-
-const textVariants = {
-	hidden: { opacity: 0, y: 30 },
-	visible: { opacity: 1, y: 0, transition: { duration: 0.8 } }
+	})
 };
 
 const Services = () => {
 	const { t } = useTranslation();
-
-	useEffect(() => {
-		if (window.$) {
-			// eslint-disable-next-line
-			$('.js-tilt').tilt({
-				axis: 'y'
-			});
-		}
-	}, []);
 
 	const cards = [
 		{
 			number: "01",
 			title: t('Web Development'),
 			desc: t('We create modern, fast, and adaptive websites using advanced technologies. From landing pages to complex web applications.'),
-			list: [
-				t('React & Next.js'),
-				t('Adaptive Design'),
-				t('SEO Optimization'),
-				t('High Performance')
-			]
+			list: [t('React & Next.js'), t('Adaptive Design'), t('SEO Optimization'), t('High Performance')]
 		},
 		{
 			number: "02",
-			title: t('Design'),
-			desc: t('We develop a unique visual style that reflects your brand values and attracts your target audience.'),
-			list: [
-				t('UI/UX Design'),
-				t('Branding'),
-				t('Prototyping'),
-				t('Design Systems')
-			]
+			title: t('Web Application'),
+			desc: t('We build fullstack applications using React Native, covering both frontend and backend for scalable solutions.'),
+			list: [t('React Native'), t('Fullstack Development'), t('API Integration'), t('Cross-platform Apps')]
 		},
 		{
 			number: "03",
 			title: t('Design'),
 			desc: t('We develop a unique visual style that reflects your brand values and attracts your target audience.'),
-			list: [
-				t('UI/UX Design'),
-				t('Branding'),
-				t('Prototyping'),
-				t('Design Systems')
-			]
+			list: [t('UI/UX Design'), t('Branding'), t('Prototyping'), t('Design Systems')]
 		},
 		{
 			number: "04",
-			title: t('Design'),
-			desc: t('We develop a unique visual style that reflects your brand values and attracts your target audience.'),
-			list: [
-				t('UI/UX Design'),
-				t('Branding'),
-				t('Prototyping'),
-				t('Design Systems')
-			]
+			title: t('Marketing'),
+			desc: t('Strategic digital marketing to grow your business presence and reach the right audience.'),
+			list: [t('Social Media'), t('Content Strategy'), t('Ad Campaigns'), t('Analytics')]
 		}
 	];
 
 	return (
-		<section className="w-full bg-black border-b border-white/10 py-12 sm:py-20">
-			<motion.div
-				className="w-full px-4 sm:px-[10%] pt-0 mb-8"
-				initial="hidden"
-				whileInView="visible"
-				viewport={{ once: true, amount: 0.4 }}
-			>
-				<motion.h1
-					className="text-[2rem] sm:text-[3rem] font-extrabold text-white mb-4 tracking-wide"
-					variants={textVariants}
+		<section className="w-full px-[10%] bg-[#050505] py-24 sm:py-32 relative overflow-hidden">
+			<div className="absolute top-0 left-1/4 w-96 h-96 bg-blue-600/10 blur-[120px] rounded-full" />
+			<div className="absolute bottom-0 right-1/4 w-96 h-96 bg-purple-600/10 blur-[120px] rounded-full" />
+
+			<div className="mx-auto lg:px-12 relative z-10">
+				<motion.div
+					className="mb-16 md:mb-24"
+					initial={{ opacity: 0, x: -20 }}
+					whileInView={{ opacity: 1, x: 0 }}
+					viewport={{ once: true }}
+					transition={{ duration: 0.8 }}
 				>
-					{t('Our Services')}
-				</motion.h1>
-				<motion.p
-					className="text-base sm:text-lg text-[#bdbdbd] mb-0"
-					variants={textVariants}
-					transition={{ delay: 0.2 }}
-				>
-					{t('A full range of services to create and develop your digital presence')}
-				</motion.p>
-			</motion.div>
-			<div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 px-4 sm:px-[10%]">
-				{cards.map((card, idx) => (
-					<motion.div
-						key={idx}
-						className="js-tilt bg-[#111] border border-[#222] p-6 sm:p-12 max-w-full min-h-[320px] sm:min-h-[450px] box-border relative flex flex-col transition-colors hover:border-white rounded-lg"
-						custom={idx}
-						initial="hidden"
-						whileInView="visible"
-						whileHover="hover"
-						viewport={{ once: true, amount: 0.2 }}
-						variants={cardVariants}
-					>
-						<div className="text-[2.5rem] sm:text-[4.5rem] font-bold text-[#222] mb-4 sm:mb-6 leading-none tracking-wide">{card.number}</div>
-						<h2 className="text-[1.2rem] sm:text-[1.8rem] font-bold text-white mb-4 sm:mb-6">{card.title}</h2>
-						<p className="text-sm sm:text-base text-[#bdbdbd] mb-6 sm:mb-8 leading-relaxed">
-							{card.desc}
-						</p>
-						<ul className="list-none p-0 m-0">
-							{card.list.map((item, i) => (
-								<li
-									key={i}
-									className="text-xs sm:text-sm text-white mb-2 sm:mb-3 pl-4 relative before:content-['▪'] before:absolute before:left-0 before:text-white before:text-lg before:top-0"
-								>
-									{item}
-								</li>
-							))}
-						</ul>
-					</motion.div>
-				))}
+					<span className="text-blue-500 font-mono tracking-widest uppercase text-sm mb-4 block">
+						{t('Expertise')}
+					</span>
+					<h1 className="text-4xl md:text-6xl font-bold text-white mb-6 tracking-tight">
+						{t('Our Services')}<span className="text-blue-500">.</span>
+					</h1>
+					<p className="max-w-2xl text-lg md:text-xl text-gray-400 leading-relaxed">
+						{t('A full range of services to create and develop your digital presence with cutting-edge solutions.')}
+					</p>
+				</motion.div>
+
+				<div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+					{cards.map((card, idx) => (
+						<motion.div
+							key={idx}
+							custom={idx}
+							initial="hidden"
+							whileInView="visible"
+							whileHover={{ y: -8 }}
+							viewport={{ once: true, amount: 0.2 }}
+							variants={cardVariants}
+							className="group relative bg-[#0f0f0f] border border-white/5 p-8 md:p-12 rounded-3xl transition-all duration-500 hover:border-white/20 hover:bg-[#141414]"
+						>
+							<div className="flex justify-between items-start mb-8">
+								<span className="text-5xl font-bold text-white/5 group-hover:text-blue-500/20 transition-colors duration-500">
+									{card.number}
+								</span>
+								<div className="h-12 w-12 rounded-full border border-white/10 flex items-center justify-center group-hover:bg-white group-hover:text-black transition-all duration-500">
+									<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+										<path d="M7 17L17 7M17 7H7M17 7V17" />
+									</svg>
+								</div>
+							</div>
+
+							<h2 className="text-2xl md:text-3xl font-semibold text-white mb-4">
+								{card.title}
+							</h2>
+							<p className="text-gray-400 text-base md:text-lg mb-8 leading-relaxed">
+								{card.desc}
+							</p>
+
+							<ul className="grid grid-cols-2 gap-y-4 gap-x-2 border-t border-white/5 pt-8">
+								{card.list.map((item, i) => (
+									<li key={i} className="flex items-center text-sm text-gray-300 group-hover:text-white transition-colors">
+										<span className="h-1.5 w-1.5 rounded-full bg-blue-500 mr-3" />
+										{item}
+									</li>
+								))}
+							</ul>
+						</motion.div>
+					))}
+				</div>
 			</div>
 		</section>
-	)
-}
+	);
+};
 
-export default Services
+export default Services;
